@@ -42,10 +42,6 @@ font-family: 'Lexend Deca', sans-serif;
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
-
-:root {
-}
-
 *,
 *::before,
 *::after {
@@ -53,15 +49,82 @@ font-family: 'Lexend Deca', sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+}
+main {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.text {
+  color: white;
+  background-color: hsl(244, 38%, 16%);
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.text span {
+  color: hsl(277, 64%, 61%);
+}
+.proggress {
+  justify-content: space-between;
+  margin-right: 2rem;
+  display: flex;
+}
+.img img {
+  max-width: 100%;
+  display: inherit;
+  height: 100%;
+}
+.text h1 {
+  font-size: 1.7rem;
+}
+.text p {
+  font-size: 0.8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.3rem;
+}
+.container {
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.comp h1,
+.temp h1,
+.quer h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.comp p,
+.temp p,
+.quer p {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
 .attribution {
   margin-top: 1rem;
   font-size: 11px;
   text-align: center;
   font-size: 15px;
   font-weight: 700;
+  color: white;
 }
-
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .text h1{
+    font-size: 25px;
+  }
 }
